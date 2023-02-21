@@ -5,10 +5,6 @@ labels: ["report"]
 assignees:
   - IlyaIvanovsky
 body:
-  - type: markdown
-    attributes:
-      value: |
-        举报一经核实，将给予举报者一定奖励。
   - type: input
     id: name
     attributes:
