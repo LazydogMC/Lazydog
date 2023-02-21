@@ -1,0 +1,44 @@
+name: 举报玩家
+description: 在这里举报违规玩家。
+title: "[REP]"
+labels: ["report"]
+assignees:
+  - IlyaIvanovsky
+body:
+  - type: markdown
+    attributes:
+      value: |
+        举报一经核实，将给予举报者一定奖励。
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: 请输入被举报玩家的ID
+      render: shell
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 发生了什么？
+      description: 告诉我们那个玩家做了什么坏事"
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: 请选择举报类型
+      options:
+        - 使用外挂
+        - 不文明/不良的聊天
+        - 恶意破坏
+        - 其他
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Term
+      description: 我确定我提供的信息真实有效
+      options:
+        - label: 我确定我提供的信息真实有效
+          required: true
