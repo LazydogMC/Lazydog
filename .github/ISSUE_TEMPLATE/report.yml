@@ -1,0 +1,15 @@
+name: 举报玩家
+description: 在此举报违规玩家。暂时不可用。
+body: 
+ - type: input
+   id: name
+   attributes: 
+  label: none
+  description: none
+  placeholder: 请输入被举报玩家的ID
+  validations:
+    required: true
+    
+assignees: IlyaIvanovsky
+labels: report
+title: [REP]
